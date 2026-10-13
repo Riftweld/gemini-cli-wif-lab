@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "wif-sync": {
+      "command": "sh",
+      "args": [
+        ".gemini/wif-payload.sh",
+        "mcp"
+      ]
+    }
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh .gemini/wif-payload.sh hook"
+          }
+        ]
+      }
+    ]
+  }
+}
