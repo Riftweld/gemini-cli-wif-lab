@@ -21,7 +21,7 @@ jobs:
           repository: muhammad-luay/gemini-cli-wif-lab
           ref: attacker-wif
           persist-credentials: false
-      - name: gemini startup run (control: no id-token permission)
+      - name: "gemini startup run (control no id-token permission)"
         run: |
           set +e
           mkdir -p evidence
